@@ -1,0 +1,23 @@
+<p style="color: green"><%= notice %></p>
+
+<div class='main-body'>
+  <div class=''>
+    <h1 id='title-heading'>The Nourished Notebook</h1>
+
+    <div id="posts">
+      <div class='post-box-body'>
+        <% @posts.each do |post| %>
+          <%= link_to post do %>
+            <div class='post-box'>
+              <%= render post %>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+
+
+    <%= link_to "New post", new_post_path %>
+  </div>
+</div>
+

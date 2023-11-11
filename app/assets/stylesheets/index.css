@@ -1,0 +1,27 @@
+/* General */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main-body {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+  text-align: center;
+}
+
+#title-heading {
+  padding-bottom: 50px;
+}
+
+/* Post Section */
+.post-box {
+  border: 2px black solid;
+}
+
+.post-box-body {
+  display: flex;
+  justify-content: space-around;
+}
