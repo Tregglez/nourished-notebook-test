@@ -1,3 +1,7 @@
+/* required files */
+@import url(posts.css);
+@import url(filter.css);
+
 /* General */
 * {
   padding: 0;
@@ -5,23 +9,31 @@
 }
 
 .main-body {
-  background-color: red;
   display: flex;
   justify-content: center;
-  padding-top: 5%;
+  padding-top: 113px;
   text-align: center;
 }
 
+/* Heading */
+.heading-with-links {
+  margin-bottom: 92px;
+}
+
 #title-heading {
-  padding-bottom: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-size: 75px;
+  font-weight: 400;
+  
 }
 
-/* Post Section */
-.post-box {
-  border: 2px black solid;
-}
-
-.post-box-body {
+.title-links {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 19px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }

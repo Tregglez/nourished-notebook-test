@@ -1,0 +1,11 @@
+.filter-links {
+  display: flex;
+  justify-content: space-around;
+  border: 1px black solid;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.filter-main-body {
+  margin-bottom: 84px;
+}
