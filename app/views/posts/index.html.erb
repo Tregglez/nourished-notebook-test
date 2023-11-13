@@ -1,7 +1,5 @@
-<p style="color: green"><%= notice %></p>
-
 <div class='main-body'>
-  <div>
+  <div class='main-content'>
     <div class='heading-with-links'>
       <h1 id='title-heading'>The Nourished Notebook</h1>
       <div class='title-links'>
@@ -11,31 +9,36 @@
       </div>
     </div>
 
-    <div class='filter-main-body'>
-      <div class='filter-links'>
-        <p>all</p>
-        <p>lifestyle</p>
-        <p>gut health</p>
-        <p>womens health</p>
-        <p>recipes</p>
-        <p>travels</p>
+    <div class='filter-container'>
+      <div class='filter-main-body'>
+        <div class='filter-links'>
+          <p>all</p>
+          <p>lifestyle</p>
+          <p>gut health</p>
+          <p>womens health</p>
+          <p>recipes</p>
+          <p>travels</p>
+        </div>
       </div>
     </div>
 
-    <div id="posts">
-      <div class='post-box-body'>
-        <% @posts.each do |post| %>
-          <%= link_to post do %>
-            <div class='post-box'>
-              <%= render post %>
-            </div>
+    <div class='post-container'>
+      <div id="posts">
+        <div class='post-box-body'>
+          <% @posts.each do |post| %>
+            <div class='image-margin'>
+              <%= link_to post do %>
+                <div class='post-box'>
+                  <%= image_tag post.image, class: 'post-image' if post.image.attached? %>
+                  <h2><%= post.title %></h2>
+                </div>
+              </div>
+            <% end %>
           <% end %>
-        <% end %>
+        </div>
       </div>
     </div>
-
 
     <%= link_to "New post", new_post_path %>
   </div>
 </div>
-

@@ -6,34 +6,35 @@
 * {
   padding: 0;
   margin: 0;
+  text-decoration: none;
 }
 
 .main-body {
-  display: flex;
-  justify-content: center;
-  padding-top: 113px;
-  text-align: center;
+  margin: 5px;
 }
 
 /* Heading */
 .heading-with-links {
-  margin-bottom: 92px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 113px 20% 67px 20%;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Playfair Display', serif;
 }
 
 #title-heading {
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Playfair Display', serif;
   font-size: 75px;
   font-weight: 400;
-  
+  font-style: normal;
 }
 
 .title-links {
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Playfair Display', serif;
   font-style: italic;
   font-weight: 400;
   font-size: 19px;
   display: flex;
   justify-content: space-between;
+  padding: 0 15px;
 }
