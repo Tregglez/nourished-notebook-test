@@ -13,12 +13,18 @@
       <div class='filter-main-body'>
         <div class='filter-links'>
           <p>all</p>
-          <p>lifestyle</p>
+          <p class='filter-select'>lifestyle</p>
           <p>gut health</p>
           <p>womens health</p>
           <p>recipes</p>
           <p>travels</p>
         </div>
+      </div>
+    </div>
+
+    <div class='post-container'>
+      <div class='add-post'>
+        <%= link_to "+ Post", new_post_path %>
       </div>
     </div>
 
@@ -31,6 +37,7 @@
                 <div class='post-box'>
                   <%= image_tag post.image, class: 'post-image' if post.image.attached? %>
                   <h2><%= post.title %></h2>
+                  <p><%= post.body %></p>
                 </div>
               </div>
             <% end %>
@@ -39,6 +46,37 @@
       </div>
     </div>
 
-    <%= link_to "New post", new_post_path %>
+    <div class='page-selector'>
+      <div class='selector'>
+        <div id='left-bracket'>
+          <p><</p>
+        </div>
+        <div id='new-page'>
+          <p>●  ○  ○  ○  ○</p>
+        </div>
+        <div id='right-bracket'>
+          <p>></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class=footer-container>
+      <div class='footer'>
+        <div class='footer-line'>
+        </div>
+        <div class='footer-links'>
+          <p>contact me</p>
+          <p>about me</p>
+          <p>instagram</p>
+        </div>
+        <div class='footer-legality'>
+          <div class='footer-legality-spacing'>
+            <p>Privacy ─ Terms</p>
+            <p>© 2023</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>

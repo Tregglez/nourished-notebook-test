@@ -15,3 +15,8 @@
   border-radius: 15px;
   font-family: 'Roboto', sans-serif;
 }
+
+.filter-select {
+  font-weight: bold;
+  font-style: italic;
+}
