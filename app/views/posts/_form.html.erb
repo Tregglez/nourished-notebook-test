@@ -11,22 +11,32 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :title, style: "display: block" %>
-    <%= form.text_field :title %>
-  </div>
+<div class='form-container'>
+  <div class='information-container'>
+    <div class='info info-labels'>
+      <%= form.label :title %>
+      <%= form.text_field :title ,style: "display: block" %>
+    </div>
 
-  <div>
-    <%= form.label :image %>
-    <%= form.file_field :image %>
-  </div>
+    <div class='info info-labels'>
+      <%= form.label :image %>
+      <%= form.file_field :image, class: "image-input" %>
+    </div>
 
-  <div>
-    <%= form.label :body, style: "display: block" %>
-    <%= form.text_area :body %>
-  </div>
+    <div class='info info-labels'>
+      <%= form.label :body, 'Desc' %>
+      <%= form.text_area :body, style: "display: block" %>
+    </div>
 
-  <div>
-    <%= form.submit %>
+    <div class='info-styles'>
+      <%= form.submit %>
+    </div>
+  <% end %>
+
   </div>
-<% end %>
+  <div class='edit-container'>
+    <div>
+      <button>Add</button>
+    </div>
+  </div>
+</div>
