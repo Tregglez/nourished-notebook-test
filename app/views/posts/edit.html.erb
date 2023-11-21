@@ -1,10 +1,14 @@
-<h1>Editing post</h1>
+<%= link_to 'Back', posts_path, class: "back-btn" %>
 
-<%= render "form", post: @post %>
+<div class='form-container'>
+  <div class='information-container'>
+    <div class='info'>
+      <%= render 'form', post: @post %>
+    </div>
 
-<br>
-
-<div>
-  <%= link_to "Show this post", @post %> |
-  <%= link_to "Back to posts", posts_path %>
+  </div>
+  <div class='edit-container'>
+    <div>
+    </div>
+  </div>
 </div>

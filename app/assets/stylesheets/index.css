@@ -55,15 +55,3 @@
 #new-page {
   padding: 0 10px;
 }
-
-.add-post {
-  background-color: black;
-  padding: 1px 5px;
-  border: 2px solid black;
-  border-radius: 25px;
-}
-
-.add-post a {
-  text-decoration: none;
-  color: white;
-}

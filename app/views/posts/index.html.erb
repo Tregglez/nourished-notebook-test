@@ -24,7 +24,7 @@
 
     <div class='post-container'>
       <div class='add-post'>
-        <%= link_to "+ Post", new_post_path %>
+        <%= link_to "+ Add", new_post_path, class: 'default-btn' %>
       </div>
     </div>
 
@@ -33,7 +33,7 @@
         <div class='post-box-body'>
           <% @posts.each do |post| %>
             <div class='image-margin'>
-              <%= link_to post do %>
+              <%= link_to edit_post_path(post) do %>
                 <div class='post-box'>
                   <%= image_tag post.image, class: 'post-image' if post.image.attached? %>
                   <h2><%= post.title %></h2>

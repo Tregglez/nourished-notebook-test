@@ -2,19 +2,21 @@
 <html>
   <head>
     <title>The Nourished Notebook</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,500&family=Roboto&display=swap');
     </style>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_importmap_tags %>
   </head>
 
   <body>
     <%= yield %>
+
+    <!-- Include your script with type="module" -->
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload', crossorigin: :use_credentials, type: 'module' %>
   </body>
 </html>

@@ -11,16 +11,21 @@
   border: 1px solid black;
   border-radius: 10px;
   height: 100%;
-  width: 18%;
+  width: 25%;
   padding: 20px 10px;
-  margin: 20px 100px;
+  margin: 50px 100px;
 }
 
 .edit-container {
-  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
   height: 100%;
-  width: 82%;
-  padding: 10px;
+  width: 75%;
+  padding: 20px 10px;
+  margin: 50px 80px;
 }
 
 .info {
@@ -32,8 +37,11 @@
 }
 
 .info-labels {
+  display: flex;
+  flex-direction: column;
   padding: 2px 10px;
-  font-size: 1.7em;
+  margin-bottom: 25px;
+  font-size: 1.1em;
   font-family: 'Open Sans', sans-serif;
   font-family: 'Playfair Display', serif;
 }
@@ -45,4 +53,21 @@
 .info-title input {
   width: 200px;
   height: 20px;
+}
+
+.input-area-size {
+  width: 283px;
+  height: 71px;
+}
+
+.default-btn {
+  border: 1px solid black;
+  border-radius: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Playfair Display', serif;
+  background-color: white;
+  color: black;
+  padding: 2px 5px;
+  margin: 2px 10px;
+  cursor: pointer;
 }
